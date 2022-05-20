@@ -1,6 +1,6 @@
---Deliverable 1 
+-- Deliverable 1 
 
---Join Employee and Titles tables, filtering for birth_date
+-- Join Employee and Titles tables, filtering for birth_date
 SELECT e.emp_no
     e.first_name,
     e.last_name,
@@ -30,6 +30,8 @@ INTO retiring_titles
 FROM unique_titles as ut
 GROUP BY ut.title
 ORDER BY COUNT (ut.emp_no) DESC;
+
+-- Deliverable 2
 
 -- Create a Mentorship Eligibility table
 SELECT DISTINCT ON (e.emp_no) e.emp_no,
